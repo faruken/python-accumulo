@@ -14,6 +14,8 @@ Thrift code is generated with `thrift -r --gen py proxy.thrift` of Accumulo 1.8.
 
 ## Examples
 
+These examples are in Python 3.6.
+
 ### Connection
     transport_socket: TSocket.TSocket = TSocket.TSocket('server', 42424)
     transport: TTransport.TFramedTransport = TTransport.TFramedTransport(transport_socket)
