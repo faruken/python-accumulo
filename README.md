@@ -19,7 +19,7 @@ These examples are in Python 3.6.
 ### Connection
     transport_socket: TSocket.TSocket = TSocket.TSocket('server', 42424)
     transport: TTransport.TFramedTransport = TTransport.TFramedTransport(transport_socket)
-    protocol: TCompactProtocol = TCompactProtocol.TCompactProtocol(transport)
+    protocol: TCompactProtocol.TCompactProtocol = TCompactProtocol.TCompactProtocol(transport)
     transport.open()
     
     client: AccumuloProxy.Client = AccumuloProxy.Client(protocol)
